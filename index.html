@@ -1,48 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>HTML5</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-
-<header class="header">
-    <div class="logo">
-        <img src="img/html5.png">
-        <div>
-            <h1>HTML5</h1>
-            <p>Proyecto escolar</p>
-        </div>
-    </div>
-
-    <nav class="nav">
-        <a href="#html5">HTML5</a>
-        <a href="#estructura">Estructura</a>
-        <a href="#etiquetas">Etiquetas</a>
-        <a href="#semantico">Semántico</a>
-        <a href="#formularios">Formularios</a>
-        <a href="#multimedia">Multimedia</a>
-    </nav>
-</header>
-
-<section class="hero">
-    <div class="hero-texto">
-        <span class="badge">Proyecto</span>
-        <h2>Aprendiendo HTML5</h2>
-        <p>Explora la estructura, etiquetas y funcionalidades modernas de HTML5.</p>
-        <a href="#html5" class="btn">Comenzar</a>
-    </div>
-
-    <div class="hero-imagen">
-        <img src="img/html5.png">
-    </div>
-</section>
-
 <section id="html5" class="seccion">
     <article class="card">
         <h2>¿Qué es HTML5?</h2>
         <img src="img/html5.png">
-        <p>Aquí va tu explicación.</p>
+        <p>
+            HTML5 es la versión más reciente del lenguaje HTML, que se utiliza para crear y estructurar páginas web. 
+            Sirve para organizar el contenido de un sitio, como textos, imágenes, enlaces y videos. 
+            Es importante porque permite crear páginas modernas, más rápidas y compatibles con diferentes dispositivos 
+            como celulares, tablets y computadoras sin necesidad de plugins adicionales.
+        </p>
     </article>
 </section>
 
@@ -62,7 +27,13 @@
 &lt;/html&gt;
         </div>
 
-        <p>Explicación aquí.</p>
+        <p>
+            La estructura básica de HTML5 es la base de cualquier página web. 
+            La etiqueta DOCTYPE indica que se está usando HTML5. 
+            La etiqueta html contiene todo el contenido del sitio. 
+            En head se colocan configuraciones como el título o enlaces a archivos CSS. 
+            En body va todo lo visible para el usuario, como textos, imágenes y secciones.
+        </p>
     </article>
 </section>
 
@@ -72,12 +43,35 @@
         <img src="img/etiquetas.png">
 
         <div class="grid">
-            <div class="mini-card"><h3>h1-h6</h3></div>
-            <div class="mini-card"><h3>p</h3></div>
-            <div class="mini-card"><h3>img</h3></div>
-            <div class="mini-card"><h3>a</h3></div>
-            <div class="mini-card"><h3>button</h3></div>
-            <div class="mini-card"><h3>ul/li</h3></div>
+            <div class="mini-card">
+                <h3>h1 - h6</h3>
+                <p>Se utilizan para títulos y subtítulos, organizando la información por niveles de importancia.</p>
+            </div>
+
+            <div class="mini-card">
+                <h3>p</h3>
+                <p>Se usa para escribir párrafos de texto dentro de la página.</p>
+            </div>
+
+            <div class="mini-card">
+                <h3>img</h3>
+                <p>Permite insertar imágenes mediante la ruta del archivo.</p>
+            </div>
+
+            <div class="mini-card">
+                <h3>a</h3>
+                <p>Sirve para crear enlaces que llevan a otras páginas o sitios web.</p>
+            </div>
+
+            <div class="mini-card">
+                <h3>button</h3>
+                <p>Se utiliza para crear botones que pueden ejecutar acciones.</p>
+            </div>
+
+            <div class="mini-card">
+                <h3>ul / li</h3>
+                <p>Se usan para crear listas de elementos, ordenadas o desordenadas.</p>
+            </div>
         </div>
     </article>
 </section>
@@ -87,12 +81,35 @@
         <h2>HTML5 semántico</h2>
         <img src="img/semantico.png">
 
-        <div class="mini-card"><h3>header</h3></div>
-        <div class="mini-card"><h3>nav</h3></div>
-        <div class="mini-card"><h3>main</h3></div>
-        <div class="mini-card"><h3>section</h3></div>
-        <div class="mini-card"><h3>article</h3></div>
-        <div class="mini-card"><h3>footer</h3></div>
+        <div class="mini-card">
+            <h3>header</h3>
+            <p>Representa el encabezado de la página o de una sección.</p>
+        </div>
+
+        <div class="mini-card">
+            <h3>nav</h3>
+            <p>Se utiliza para agrupar enlaces de navegación.</p>
+        </div>
+
+        <div class="mini-card">
+            <h3>main</h3>
+            <p>Contiene el contenido principal del sitio web.</p>
+        </div>
+
+        <div class="mini-card">
+            <h3>section</h3>
+            <p>Define una sección dentro del documento.</p>
+        </div>
+
+        <div class="mini-card">
+            <h3>article</h3>
+            <p>Representa contenido independiente como artículos o publicaciones.</p>
+        </div>
+
+        <div class="mini-card">
+            <h3>footer</h3>
+            <p>Es el pie de página donde se coloca información adicional o créditos.</p>
+        </div>
     </article>
 </section>
 
@@ -101,15 +118,22 @@
         <h2>Formularios</h2>
         <img src="img/formulario.png">
 
+        <p>
+            Los formularios permiten al usuario ingresar información en una página web. 
+            Se utilizan para registros, inicios de sesión o envío de datos. 
+            Algunas etiquetas importantes son form, label, input, textarea y button, 
+            las cuales ayudan a capturar y enviar información.
+        </p>
+
         <form class="demo-form">
             <label>Nombre</label>
-            <input type="text">
+            <input type="text" placeholder="Ingresa tu nombre">
 
             <label>Correo</label>
-            <input type="email">
+            <input type="email" placeholder="Ingresa tu correo">
 
             <label>Comentario</label>
-            <textarea></textarea>
+            <textarea placeholder="Escribe tu comentario"></textarea>
 
             <button>Enviar</button>
         </form>
@@ -120,17 +144,33 @@
     <article class="card">
         <h2>Multimedia</h2>
 
-        <div class="mini-card"><h3>Imagen</h3></div>
-        <div class="mini-card"><h3>Audio</h3></div>
-        <div class="mini-card"><h3>Video</h3></div>
+        <p>
+            HTML5 permite agregar contenido multimedia como imágenes, audio y video directamente en la página web. 
+            Esto facilita la creación de sitios más interactivos sin necesidad de programas externos.
+        </p>
+
+        <div class="mini-card">
+            <h3>Imágenes</h3>
+            <p>Se agregan con la etiqueta img y permiten mostrar contenido visual.</p>
+        </div>
+
+        <div class="mini-card">
+            <h3>Audio</h3>
+            <p>La etiqueta audio permite reproducir sonidos dentro de la página.</p>
+        </div>
+
+        <div class="mini-card">
+            <h3>Video</h3>
+            <p>La etiqueta video permite mostrar videos sin usar reproductores externos.</p>
+        </div>
+
+        <div class="mini-card">
+            <h3>Accesibilidad</h3>
+            <p>El atributo alt en imágenes ayuda a describirlas para personas con discapacidad visual.</p>
+        </div>
     </article>
 </section>
 
 <footer class="footer">
-    Proyecto HTML5 - Tu nombre aquí
+    Proyecto HTML5 - Tu Nombre Aquí
 </footer>
-
-<script src="js/app.js"></script>
-
-</body>
-</html>
